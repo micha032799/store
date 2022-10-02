@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/menu.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <header class="header">
+
+        <nav class="nav">
+            <a href="index.html" class="nav-link logo">Game Store</a> 
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="tutorial.html">Tutorial</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="registro.html">Registro</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="productos.html">Productos</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="promociones.html">Promociones</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="compare.html">Compare</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="ubicacion.html">Ubicacion</a></li>
+                <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <h2> Registro del usuario</h2>
+    <br>
+    <h3 style="font-size: 22px;">Informacion de registro</h3>
+    <br>
+    <form action="registro.jsp" method="POST">
+        <input type="hidden" name="idCliente" value="123456789">
+        <label>Nombre Completo: </label>
+        <input type="text" 
+               name="nombre" 
+               placeholder="Apellido1 Apellido2 Nombre"/>
+        <br/>
+        <label>Cédula de identidad </label>
+        <input type="identidad" 
+               name="Cedula" 
+               placeholder="117390958"/>
+        <br/>
+        <label>Correo: </label>
+        <input type="email" 
+               name="correo" 
+               placeholder="juan@gmail.com"/>
+        <br/>
+        <label>Fecha de nacimiento: </label>
+        <input type="date" 
+               name="nacimiento"/>
+        <br/>
+        <label>Foto de perfil: </label>
+        <input type="file" 
+               name="foto"/>
+        <br/>
+        <label>Edad: </label>
+        <input type="number" 
+               name="edad" min="18" max="35"/>
+        <br/>
+        <label>Clave de Ingreso: </label>
+        <input type="password" name="clave"/>
+        <br/>
+
+        <input type="submit" name="enviar" value="Registrar"/>
+        <input type="submit" name="iniciar" value="Iniciar Sesion"/>
+        <input type="submit" name="olvidar" value="Olvido la Contraseña"/>
+    </form>
+    <img src="img/registrese-ahora-icono-estilo-plano-ilustracion-vector-registro-sobre-fondo-aislado-concepto-negocio-signo-notificacion-miembro_157943-649.jpg" alt="" height="335"/>
+</html>
